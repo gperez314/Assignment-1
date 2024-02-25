@@ -1,0 +1,64 @@
+<!-- 
+Name: Assignement1
+Course Code: SODV1201
+Class: Software Development Diploma program
+Author: Glenn Perez
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 | Staff</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header id="headerContainer">
+        <div id="avatarDiv">
+            <a><img id="avatar" class="avatar" src="images/avatar.jpg" alt="Glenn Perez"></a>
+        </div>
+        <div id="navDiv">
+            <nav id="navMain" class="nav">
+                <ul class="nav">
+                    <li class="nav"><a href="index.html" class="navText coloredText2" id="home">Home</a></li>
+                    <li class="nav"><a href="grade.html" class="navText coloredText2" id="grade">Grade
+                            Converter</a></li>
+                    <li class="nav"><a href="staff.html" class="navText coloredText2 current" id="staff">Staff Page</a>
+                    </li>
+                    <li class="nav"><a href="weather.html" class="navText coloredText2" id="weather">Weather</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Staff Page Main Content -->
+    <main id="StaffContainer">
+        <div id="orderDiv">
+            <label for="sortOrder">Sort By:</label>
+            <select name="sortOrder" id="sortOrder">
+                <option value="name">Name</option>
+                <option value="salary">Salary</option>
+            </select>
+        </div>
+        <div class="staffContainer">
+        </div>
+    </main>
+    <!-- Page Footer -->
+    <footer>
+        <div id="footerDiv" class="coloredText2">Submitted by:
+            <span class="coloredText1">Glenn Perez</span> | Date: <span id="date" class="coloredText1"></span> |
+            Copyright:
+            <span class="coloredText1">&copy 2024</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

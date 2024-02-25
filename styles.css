@@ -1,0 +1,396 @@
+/*
+Name: Assignement1
+Course Code: SODV1201
+Class: Software Development Diploma program
+Author: Glenn Perez
+*/
+
+/* colors and variables */
+:root {
+    --backgrounColor: rgb(41, 41, 41);
+    --color1: rgb(255, 220, 18);
+    --color2: rgb(191, 191, 191);
+    --color3: white;
+}
+
+.coloredText1 {
+    color: var(--color1)
+}
+
+.coloredText2 {
+    color: var(--color2)
+}
+
+.coloredText3 {
+    color: var(--color3)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for body */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: var(--backgrounColor);
+}
+
+
+/* Special styling for smaller screens */
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* Styles for Header Page */
+#avatar {
+    border-radius: 50%;
+    height: 50px;
+    padding: 15px 50px;
+    width: 50px;
+}
+
+#headerContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav {
+    display: inline-block;
+}
+
+#navDiv {
+    padding-right: 15px;
+}
+
+#navMain {
+    padding-right: 20px;
+}
+
+.navText {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.current {
+    color: var(--color1)
+}
+
+.navText:hover {
+    font-size: 1.5em;
+    color: var(--color1)
+}
+
+/* Special styling for header at smaller screens */
+@media only screen and (max-width: 800px) {
+    #avatar {
+        padding: 15px 15px;
+    }
+
+    .nav ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #navDiv {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .navText {
+        padding: 0 10px 0 10px;
+    }
+
+    #themeButtonDiv {
+        padding-right: 10px;
+    }
+}
+
+/* Styles for Footer */
+#footerDiv {
+    display: block;
+    height: 30px;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* General Styles*/
+#Container {
+    display: block;
+    margin: auto;
+    height: max(570px, calc(100vh - 130px));
+    text-align: justify;
+    width: 90vw;
+}
+
+#StaffContainer {
+    display: block;
+    margin: auto;
+    height: auto;
+    text-align: justify;
+    width: 90vw;
+}
+
+/* Styles for Home Page */
+#homepic {
+    border-radius: 50%;
+    height: 250px;
+    padding-bottom: 20px;
+    width: 250px;
+}
+
+#homeName {
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+#homeTitleDiv {
+    justify-content: center;
+    padding: 30px 0;
+    text-align: justify;
+}
+
+#homeTitle {
+    padding: 20px;
+    text-align: center;
+}
+
+.mainHeading {
+    padding: 10px 0;
+}
+
+.mainContent {
+    padding: 5px 0;
+}
+
+/* Styles for Mark to Grade Converter Page */
+#gradeTitleDiv {
+    justify-content: center;
+    padding: 30px 0;
+    text-align: justify;
+}
+
+.gradeHeading {
+    padding: 30px 0;
+}
+
+#gradeTitle {
+    padding: 20px;
+    text-align: center;
+}
+
+#mark {
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#mark:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+#convertMark {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: var(--color1);
+    border: 1px solid var(--color1);
+    height: 36px;
+    width: 100px;
+    padding: 0 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+#convertMark:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+#gradeprompt {
+    padding: 40px;
+    font-size: 1.5em;
+}
+
+/* Styles for Staff Page */
+#orderDiv {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color1);
+}
+
+#sortOrder {
+    width: 150px;
+    font-size: 18px;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.staffContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 430px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(var(--color3), var(--color3));
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.left-infor {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    text-align: center;
+}
+
+.left-infor p {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    border-radius: 10px;
+    color: var(--color3);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+}
+
+.right-infor {
+    position: relative;
+    margin-left: 10px;
+}
+
+.right-infor hr {
+    border: 3px solid var(--backgrounColor);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.right-infor h1 {
+    margin-top: 15px;
+}
+
+.right-infor p {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    border-radius: 10px;
+    color: var(--backgrounColor);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.right-infor ul li {
+    margin-left: 40px;
+    font-size: 16px;
+    padding: 3px 10px;
+}
+
+/* Styles for Weather Page */
+#weatherTitleDiv {
+    justify-content: center;
+    padding: 30px 0;
+    text-align: justify;
+}
+
+.weatherHeading {
+    padding: 30px 0;
+}
+
+#weatherTitle {
+    padding: 20px;
+    text-align: center;
+}
+
+#tempFarenheit {
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 250px;
+}
+
+#tempFarenheit:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+#convertTemp {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: var(--color1);
+    border: 1px solid var(--color1);
+    height: 36px;
+    width: 100px;
+    padding: 0 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+#convertTemp:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+#tempConverted {
+    padding: 40px;
+    font-size: 1.5em;
+}

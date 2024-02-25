@@ -1,0 +1,75 @@
+<!-- 
+Name: Assignement1
+Course Code: SODV1201
+Class: Software Development Diploma program
+Author: Glenn Perez
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header id="headerContainer">
+        <div id="avatarDiv">
+            <a><img id="avatar" class="avatar" src="images/avatar.jpg" alt="Glenn Perez"></a>
+        </div>
+        <div id="navDiv">
+            <nav id="navMain" class="nav">
+                <ul class="nav">
+                    <li class="nav"><a href="index.html" class="navText coloredText2 current" id="home">Home</a></li>
+                    <li class="nav"><a href="grade.html" class="navText coloredText2" id="grade">Grade
+                            Converter</a></li>
+                    <li class="nav"><a href="staff.html" class="navText coloredText2" id="staff">Staff Page</a>
+                    </li>
+                    <li class="nav"><a href="weather.html" class="navText coloredText2" id="weather">Weather</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Home Page Main Content -->
+    <main id="Container">
+        <div id="homeDiv">
+            <!-- Home Avatar and Title -->
+            <div id="homeTitleDiv">
+                <div id="homeTitle">
+                    <a><img id="homepic" class="avatar" src="images/resume_pic.jpg" alt="Glenn Perez"></a>
+                    <h1 id="homeName" class="mainHeading coloredText1"></h1>
+                </div>
+                <div id="homeTitleDesc">
+                    <p class="mainContent coloredText3">I am an Electronics Engineer and a Certified LabVIEW Developer
+                        specializing in Machine Vision and Factory Automation. I have extensive industry experience
+                        working on a Philippine-based company doing robotics and test developments for semiconductors. I
+                        have also experience working for overseas clients to help maintain their software products used
+                        in electrical and power systems design and simulation.</p>
+                    <p class="mainContent coloredText3">I am currently taking a diploma in Software Development at Bow
+                        Valley College. I want to leverage my technical skills even further and explore the field of
+                        mobile and web development. I am on my second semester and is currently enjoying all aspects of
+                        it and I am very much excited to apply all my learnings in this course.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Page Footer -->
+    <footer>
+        <div id="footerDiv" class="coloredText2">Submitted by:
+            <span class="coloredText1">Glenn Perez</span> | Date: <span id="date" class="coloredText1"></span> |
+            Copyright:
+            <span class="coloredText1">&copy 2024</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

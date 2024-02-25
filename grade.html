@@ -1,0 +1,65 @@
+<!-- 
+Name: Assignement1
+Course Code: SODV1201
+Class: Software Development Diploma program
+Author: Glenn Perez
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 | Grade Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header id="headerContainer">
+        <div id="avatarDiv">
+            <a><img id="avatar" class="avatar" src="images/avatar.jpg" alt="Glenn Perez"></a>
+        </div>
+        <div id="navDiv">
+            <nav id="navMain" class="nav">
+                <ul class="nav">
+                    <li class="nav"><a href="index.html" class="navText coloredText2" id="home">Home</a></li>
+                    <li class="nav"><a href="grade.html" class="navText coloredText2 current" id="grade">Grade
+                            Converter</a></li>
+                    <li class="nav"><a href="staff.html" class="navText coloredText2" id="staff">Staff Page</a>
+                    </li>
+                    <li class="nav"><a href="weather.html" class="navText coloredText2" id="weather">Weather</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Grade Converter Page Main Content -->
+    <main id="Container">
+        <div id="gradeDiv">
+            <div id="gradeTitleDiv">
+                <div id="gradeTitle">
+                    <h1 id="gradeName" class="gradeHeading coloredText1">Mark to Grade Converter</h1>
+                    <input type="text" id="mark" placeholder="Enter your Mark">
+                    <button id="convertMark">Convert</button>
+                    <p id="gradeprompt"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Page Footer -->
+    <footer>
+        <div id="footerDiv" class="coloredText2">Submitted by:
+            <span class="coloredText1">Glenn Perez</span> | Date: <span id="date" class="coloredText1"></span> |
+            Copyright:
+            <span class="coloredText1">&copy 2024</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
